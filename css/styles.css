@@ -1,0 +1,137 @@
+:root {
+  --background-color: #19A1AE;
+}
+
+body {
+  margin: 0;
+  padding-top: 173px;
+  padding-bottom: 173px;
+  font-family: Kumbh Sans;
+  background: url(/images/bg-pattern-top.svg) no-repeat, url(/images/bg-pattern-bottom.svg) no-repeat, var(--background-color);
+  background-position: -40% 205%, 140% -130%;
+  /* background-position: -15vw -55vh, 45vw 50vh; */
+}
+
+main {
+  width: 350px;
+  height: 374px;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  vertical-align: middle;
+}
+
+.avatar-container {
+
+}
+
+.avatar {
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+  border-radius: 52px;
+  border: solid 5px white;
+  position: absolute;
+  right: 127px;
+  top: 92px;
+}
+
+.bg-pattern-card {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.place-of-residence {
+  margin-top: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #6B7082;
+  margin-bottom: 28px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-top: 72px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+span {
+  font-weight: 400;
+  color: #6B7082;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: solid 1px  #E8E9EC;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 27px;
+}
+
+.followers :nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+.likes :nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+.photos :nth-child(1) {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+.followers :nth-child(2) {
+  font-weight: 400;
+  font-size: 10px;
+  color: #6B7082;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+.likes :nth-child(2) {
+  font-weight: 400;
+  font-size: 10px;
+  color: #6B7082;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+.photos :nth-child(2) {
+  font-weight: 400;
+  font-size: 10px;
+  color: #6B7082;
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: 326px;
+  }
+
+  body {
+    background-position: 130% 200%, -30% -100%;
+  }
+
+  .avatar {
+    right: 115px;
+  }
+}
+
